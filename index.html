@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .spinner {
+ width: 44px;
+ height: 44px;
+ animation: spinner-y0fdc1 2s infinite ease;
+ transform-style: preserve-3d;
+}
+
+.spinner > div {
+ background-color: rgba(0,77,255,0.2);
+ height: 100%;
+ position: absolute;
+ width: 100%;
+ border: 2px solid #004dff;
+}
+
+.spinner div:nth-of-type(1) {
+ transform: translateZ(-22px) rotateY(180deg);
+}
+
+.spinner div:nth-of-type(2) {
+ transform: rotateY(-270deg) translateX(50%);
+ transform-origin: top right;
+}
+
+.spinner div:nth-of-type(3) {
+ transform: rotateY(270deg) translateX(-50%);
+ transform-origin: center left;
+}
+
+.spinner div:nth-of-type(4) {
+ transform: rotateX(90deg) translateY(-50%);
+ transform-origin: top center;
+}
+
+.spinner div:nth-of-type(5) {
+ transform: rotateX(-90deg) translateY(50%);
+ transform-origin: bottom center;
+}
+
+.spinner div:nth-of-type(6) {
+ transform: translateZ(22px);
+}
+
+@keyframes spinner-y0fdc1 {
+ 0% {
+  transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+ }
+
+ 50% {
+  transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+ }
+
+ 100% {
+  transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+ }
+}
+    body{
+        background-color: black;
+        color: white;
+    }
+    .container{
+     font-family: Arial, Helvetica, sans-serif;
+     position: absolute;
+     left: 160px;
+     top: 30%;
+     font-size: 40px;
+     border-left: 5px solid white;
+     padding-left: 30px;
+    }
+    .text:hover{
+        padding-left: 30px;
+        transition: 1s;
+    }
+    
+    .spinner{
+        position: absolute;
+        right: 300px;
+        top: 31%;
+        height: 200px;
+        width: 200px;
+    }
+    nav{
+        padding: 40px;
+        text-decoration: none;
+    }
+    nav a{
+        text-decoration: none;
+    }
+    nav ul li {
+        text-decoration: none;
+        color: white;
+    }
+    nav ul li{
+        list-style-type: none;
+    }
+    nav ul{
+        display: flex;
+        font-family: poppins;
+        text-transform: uppercase;
+        justify-content: space-evenly;
+    }
+    nav ul:hover{
+        color: red;
+        transition: ease-in-out 1s;
+    }
+    .home:hover{
+        color: red;
+        transition: ease-in-out 1s;
+        cursor: pointer;
+        letter-spacing: 3px;
+        font-size: 20px;
+    }
+    .about:hover{
+        color: red;
+        transition: ease-in-out 1s;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    .how:hover{
+        color: red;
+        transition: ease-in-out 1s;
+        cursor: pointer;
+        font-size: 20px;
+    }
+  
+</style>
+<body>
+    <div class="main">
+        <nav>
+            <ul>
+                <a href="landing.html"><li class="home">Home</li></a>
+                <a href="about.html"><li class="about">About</li></a>
+                <a href="group.html"><li class="how">Group</li></a>
+            </ul>
+        </nav>
+        <div class="container">
+            <h1>Global</h1>
+            <h1>Citizenship</h1>
+            <div class="text" style="font-size: 20px; width: 500px;">
+                <p> is the concept of recognizing oneself as a member of a global community with responsibilities and duties that extend beyond national borders, emphasizing values like interconnectedness, cultural sensitivity, environmental stewardship, and social justice.</p>
+            </div>
+        </div>
+        <div class="con2">
+            <div class="spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
